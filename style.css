@@ -1,0 +1,76 @@
+body {
+    background-color : rebeccapurple;
+    color : pink;
+
+}
+
+html {
+    border: red dashed 5px;
+}
+#AG_positive {
+    color : azure;
+    background-color : lightcoral;
+    font-family : Dialog, sans-serif;
+    padding : 5px;
+    margin : 200px;
+    border : white 10px dashed;
+}
+
+#tablenegative {
+    color : black;
+    background-color : red;
+    font-family : Castellar;
+    padding : 5px;
+    margin : 200px;
+    border : black 10px dotted;
+}
+
+.hw {
+    background-color : azure;
+    color : darkgoldenrod;
+    font-size: 100px;
+    border: 9px double brown;
+}
+
+.funfacts {
+    background-color : azure;
+    color : darkgoldenrod;
+}
+
+.website {
+    background-color : azure;
+    color : darkgoldenrod;
+}
+
+img {
+    border : black 10px solid;
+}
+
+a[href*="https://www.frhsd.com"] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    color: red;
+}
+
+ul>li:first-child {
+    color: orange;
+    font-weight: bold;
+}
+
+a:visited {
+    color: beige;
+}
+
+li:hover  {
+    background-color: darkgoldenrod;
+}
+
+div {
+    li {
+    border : black 2px solid;
+    }
+}
+
+li + li {
+    color: purple;
+}
