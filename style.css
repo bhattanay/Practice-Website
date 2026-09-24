@@ -74,3 +74,41 @@ div {
 li + li {
     color: purple;
 }
+
+#feinfein {
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#fein {
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#gridBox {
+    display : grid;
+    grid-template-columns : repeat(4, 1fr);
+}
+
+#feinfeinfein {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 12px;
+    img {
+        grid-column: span 2;
+        grid-row: span 2;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#story {
+    display : flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
