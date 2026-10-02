@@ -1,6 +1,8 @@
 function clicked() {
     document.title = document.getElementbyId("bu")
+
 }
+
 function increaseLoc() {
     localStorage.setItem("val", JSON.parse(document.getElementById("loc").innerText) + 1)
     document.getElementById("loc").innerText = JSON.parse(document.getElementById("loc").innerText) + 1
