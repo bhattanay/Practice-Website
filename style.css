@@ -1,15 +1,15 @@
 body {
-    background-color : rebeccapurple;
+    background-color : mediumpurple;
     color : pink;
 
 }
 
 html {
-    border: red dashed 5px;
+    border: gold dashed 3px;
 }
 #AG_positive {
-    color : azure;
-    background-color : lightcoral;
+    color : white;
+    background-color : gold;
     font-family : Dialog, sans-serif;
     padding : 5px;
     margin : 200px;
@@ -29,12 +29,16 @@ html {
     background-color : azure;
     color : darkgoldenrod;
     font-size: 100px;
-    border: 9px double brown;
+    border: 5px solid brown;
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
 }
 
 .funfacts {
-    background-color : azure;
+    background-color : navy;
     color : darkgoldenrod;
+    text-align: center;
 }
 
 .website {
@@ -42,8 +46,34 @@ html {
     color : darkgoldenrod;
 }
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    width: 160px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translate(-50%);
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 img {
     border : black 10px solid;
+    height: 50%;
+    width: 50%;
 }
 
 a[href*="https://www.frhsd.com"] {
@@ -72,13 +102,14 @@ div {
 }
 
 li + li {
-    color: purple;
+    color: white;
 }
 
-#feinfein {
+#orderedList {
     display : flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 #fein {
@@ -92,16 +123,25 @@ li + li {
     grid-template-columns : repeat(4, 1fr);
 }
 
-#feinfeinfein {
+.feinfeinfein {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
     gap: 12px;
     img {
-        grid-column: span 2;
-        grid-row: span 2;
+        grid-column: span 3;
+        grid-row: span 3;
         height: 100%;
         width: 100%;
+    }
+    p {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    a {
+        grid-column: span 1;
+        grid-row: span 1;
     }
 }
 
@@ -111,4 +151,5 @@ li + li {
     background-color: black;
     color: white;
     text-align: center;
+
 }

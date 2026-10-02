@@ -1,6 +1,6 @@
 function clicked() {
-    document.title = document.getElementbyId("bu")
-
+    if (document.getElementById("txtbx").value)
+    document.title = document.getElementById("txtbx").value
 }
 
 function increaseLoc() {
