@@ -5,7 +5,7 @@ body {
 }
 
 html {
-    border: gold dashed 3px;
+    border: gold dashed 25px;
 }
 #AG_positive {
     color : white;
@@ -40,6 +40,14 @@ html {
     color : darkgoldenrod;
     text-align: center;
 }
+
+.tooltip {
+    background-color: black;
+    text-align: center;
+    width: fit-content;
+    margin-inline: auto;
+}
+
 
 .website {
     background-color : azure;
