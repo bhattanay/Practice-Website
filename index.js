@@ -8,9 +8,8 @@ function increaseLoc() {
 }
 
 function increaseSes() {
-    localStorage.setItem("val", JSON.parse(document.getElementById("ses").innerText) + 1);
+    sessionStorage.setItem("val", JSON.parse(document.getElementById("ses").innerText) + 1);
     document.getElementById("ses").innerText = JSON.parse(document.getElementById("ses").innerText) + 1;
-
 }
 
 function loading() {
